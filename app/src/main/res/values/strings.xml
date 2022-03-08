@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Demo App</string>
+    <string-array name="student_list">
+        <item>Ramesh</item>
+        <item>Suresh</item>
+        <item>Geeta</item>
+        <item>Sita</item>
+        <item>Ram</item>
+        <item>Hari</item>
+    </string-array>
 </resources>

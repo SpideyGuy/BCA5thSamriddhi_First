@@ -5,8 +5,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -18,10 +20,12 @@ public class MainActivity extends AppCompatActivity {
 
     Button btnVerify;
 
+    LinearLayout llInner;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.actiivity_absolute);
 
         etFirstName = (EditText) findViewById(R.id.et_fname);
         etEmail = (EditText) findViewById(R.id.et_email);
@@ -29,6 +33,17 @@ public class MainActivity extends AppCompatActivity {
         btnVerify = (Button) findViewById(R.id.btn_verify);
 
         tvRegister = (TextView) findViewById(R.id.tv_register);
+
+        llInner = (LinearLayout) findViewById(R.id.inner_ll);
+
+        TextView tvFormName = new TextView(this);
+        tvFormName.setLayoutParams(new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT));
+        tvFormName.setText("This is Form Name");
+        tvFormName.setTextSize(18);
+
+        if(llInner != null){
+            llInner.addView(tvFormName);
+        }
 
 //        String fName = etFirstName.getText().toString();
 
