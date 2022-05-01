@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DialogExample"
+    android:gravity="center">
+
+    <Button
+        android:id="@+id/btnDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click For Dialog"
+        android:background="@color/primary"
+        android:textColor="@color/white"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/btnCalculator"
+        android:layout_below="@id/btnDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculator"
+        android:background="@color/accent"
+        android:textColor="@color/white"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:layout_marginTop="24dp"
+        android:textSize="18sp"/>
+
+</RelativeLayout>

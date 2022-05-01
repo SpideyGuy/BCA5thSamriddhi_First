@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.bca.firstproject">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,7 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true">
         <activity
-            android:name=".ExampleActivity"
+            android:name=".RecyclerActivity"
             android:exported="true"
             android:theme="@style/Theme.FirstApplication">
             <intent-filter>
@@ -19,10 +21,38 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".CustomGridViewExample"
+            android:exported="true"
+            android:theme="@style/Theme.FirstApplication">
+        </activity>
+        <activity
+            android:name=".GridExampleActivity"
+            android:exported="true"
+            android:theme="@style/Theme.FirstApplication"></activity>
+        <activity
+            android:name=".CustomListViewExample"
+            android:exported="true"
+            android:theme="@style/Theme.FirstApplication" />
+        <activity
+            android:name=".Chapter6Activity"
+            android:exported="true"
+            android:theme="@style/Theme.FirstApplication" />
+        <activity
+            android:name=".DialogExample"
+            android:exported="true"
+            android:theme="@style/Theme.FirstApplication" />
+        <activity
+            android:name=".FragmentExampleActivity"
+            android:exported="true"
+            android:theme="@style/Theme.FirstApplication" />
+        <activity
+            android:name=".ExampleActivity"
+            android:exported="true"
+            android:theme="@style/Theme.FirstApplication" />
+        <activity
             android:name=".SecondActivity"
             android:exported="true"
-            android:theme="@style/Theme.AppWithoutActionBar">
-        </activity>
+            android:theme="@style/Theme.AppWithoutActionBar" />
         <activity
             android:name=".RegisterActivity"
             android:exported="true"
@@ -30,11 +60,10 @@
         <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:theme="@style/Theme.AppWithoutActionBar"></activity>
+            android:theme="@style/Theme.AppWithoutActionBar" />
         <activity
             android:name=".SplashActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true" />
     </application>
 
 </manifest>
