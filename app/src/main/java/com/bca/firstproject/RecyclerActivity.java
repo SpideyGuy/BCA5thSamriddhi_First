@@ -16,6 +16,10 @@ public class RecyclerActivity extends AppCompatActivity {
 
     ArrayList<StudentRecord> studentRecords;
 
+    DatabaseHelper dbHelper;
+
+    ArrayList<Student> students;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,6 +33,12 @@ public class RecyclerActivity extends AppCompatActivity {
         rv.setLayoutManager(layoutManager);
 
         studentRecords = new ArrayList<>();
+
+        dbHelper = new DatabaseHelper(this);
+
+        students = new ArrayList<>();
+
+        students.addAll(dbHelper.getStudents());
 
         StudentRecord student1 = new StudentRecord(
                 "Aanchal Neupane",
@@ -59,7 +69,7 @@ public class RecyclerActivity extends AppCompatActivity {
         studentRecords.add(student3);
         studentRecords.add(student4);
 
-        rvAdapter = new RecyclerAdapter(this, studentRecords);
+        rvAdapter = new RecyclerAdapter(this, students);
 
         rv.setAdapter(rvAdapter);
 

@@ -1,10 +1,9 @@
 package com.bca.firstproject;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -27,10 +26,10 @@ public class RecyclerAdapter extends RecyclerView.Adapter<
         RecyclerAdapter.ViewHolder>{
 
     Activity ctx;
-    ArrayList<StudentRecord> stdRecords;
+    ArrayList<Student> stdRecords;
 
     public RecyclerAdapter(Activity context,
-                           ArrayList<StudentRecord> studentRecords){
+                           ArrayList<Student> studentRecords){
         this.ctx = context;
         this.stdRecords = studentRecords;
     }
@@ -48,9 +47,9 @@ public class RecyclerAdapter extends RecyclerView.Adapter<
 
     @Override
     public void onBindViewHolder(@NonNull RecyclerAdapter.ViewHolder holder,
-                                 int position) {
+                                 @SuppressLint("RecyclerView") int position) {
 
-        holder.name.setText(stdRecords.get(position).getTitle());
+        holder.name.setText(stdRecords.get(position).getName());
         holder.nickname.setText(stdRecords.get(position).getNickname());
 
         holder.call.setOnClickListener(new View.OnClickListener() {

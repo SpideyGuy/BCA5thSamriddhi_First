@@ -12,16 +12,20 @@
         <entry key="app/src/main/res/layout/activity_example.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_fragment_example.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_grid_example.xml" value="0.1956521739130435" />
+        <entry key="app/src/main/res/layout/activity_jsonparse.xml" value="0.20697463768115942" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_main_alt.xml" value="0.22056159420289856" />
+        <entry key="app/src/main/res/layout/activity_movie_recycler.xml" value="0.11018237082066869" />
         <entry key="app/src/main/res/layout/activity_register.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_second.xml" value="0.17502532928064843" />
+        <entry key="app/src/main/res/layout/activity_student_form.xml" value="0.1259259259259259" />
         <entry key="app/src/main/res/layout/activity_table.xml" value="0.5" />
         <entry key="app/src/main/res/layout/calculator_dialog.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_1.xml" value="0.13722826086956522" />
         <entry key="app/src/main/res/layout/fragment_2.xml" value="0.1" />
         <entry key="app/src/main/res/layout/grid_items.xml" value="0.1956521739130435" />
         <entry key="app/src/main/res/layout/listview_row.xml" value="0.11481481481481481" />
+        <entry key="app/src/main/res/layout/movie_recycler_item.xml" value="0.11018237082066869" />
         <entry key="app/src/main/res/layout/recycler_item.xml" value="0.17502532928064843" />
         <entry key="app/src/main/res/layout/spinner.xml" value="0.1" />
         <entry key="app/src/main/res/menu/settings_menu.xml" value="0.1" />

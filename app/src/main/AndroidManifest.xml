@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.bca.firstproject">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -11,7 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true">
         <activity
-            android:name=".RecyclerActivity"
+            android:name=".MovieRecyclerActivity"
             android:exported="true"
             android:theme="@style/Theme.FirstApplication">
             <intent-filter>
@@ -21,14 +21,25 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".CustomGridViewExample"
+            android:name=".JSONParseActivity"
             android:exported="true"
             android:theme="@style/Theme.FirstApplication">
         </activity>
         <activity
+            android:name=".StudentFormActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".RecyclerActivity"
+            android:exported="true"
+            android:theme="@style/Theme.FirstApplication" />
+        <activity
+            android:name=".CustomGridViewExample"
+            android:exported="true"
+            android:theme="@style/Theme.FirstApplication" />
+        <activity
             android:name=".GridExampleActivity"
             android:exported="true"
-            android:theme="@style/Theme.FirstApplication"></activity>
+            android:theme="@style/Theme.FirstApplication" />
         <activity
             android:name=".CustomListViewExample"
             android:exported="true"
