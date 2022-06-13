@@ -3,6 +3,9 @@
     package="com.bca.firstproject">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
         android:allowBackup="true"
@@ -11,23 +14,31 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true">
         <activity
-            android:name=".MovieRecyclerActivity"
-            android:exported="true"
-            android:theme="@style/Theme.FirstApplication">
+            android:name=".GMapActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyAzT2OQzwBiXs7yFuujGo_b-2-toUrZrkk" />
+
         <activity
-            android:name=".JSONParseActivity"
+            android:name=".MovieRecyclerActivity"
             android:exported="true"
             android:theme="@style/Theme.FirstApplication">
         </activity>
         <activity
+            android:name=".JSONParseActivity"
+            android:exported="true"
+            android:theme="@style/Theme.FirstApplication" />
+        <activity
             android:name=".StudentFormActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".RecyclerActivity"
             android:exported="true"
